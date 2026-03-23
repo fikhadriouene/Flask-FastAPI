@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+venv/
+.env/
+.venv/
+env/
+
+# Variables d'environnement
+.env
+*.env
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Fichiers temporaires
+*.tmp
+*.bak
+
+# Modèles ML / poids
+*.h5
+*.keras
+*.pt
+*.pth
+
+# Données (optionnel selon ton projet)
+data/
+datasets/
+
+# Fichiers de sortie
+outputs/
+results/
+
+# Coverage / tests
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Docker (si utilisé)
+*.pid
+
+# MacOS
+.AppleDouble
+.LSOverride
