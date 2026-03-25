@@ -1,14 +1,18 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, Blueprint
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
+bp = Blueprint("Hello",__name__)
 
 message_db = {
     "english": "Hello!",
     "french": "Bonjour!"
 }
 
-@app.route('/hello/<language>', methods=['GET'])
+# @app.route('/hello/<language>', methods=['GET'])
+
+@bp.route('/hello/<language>', methods=['GET'])
+
 def get_message(language):
     if language not in message_db:
         return jsonify({
@@ -21,5 +25,5 @@ def get_message(language):
         "language": language
     }), 200
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+# if __name__ == '__main__':
+#     app.run(debug=True, port=5000)

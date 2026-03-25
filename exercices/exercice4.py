@@ -16,9 +16,7 @@
 #   -d '{"username": "john", "email": "john@example.com", "password": "secure123", "age": 25}'
 # # {"message": "Registration successful", "user": {...}}
 
-# curl -X POST http://localhost:5000/register \
-#   -H "Content-Type: application/json" \
-#   -d '{"username": "j", "email": "invalid", "password": "short", "age": 15}'
+# curl -X POST http://localhost:5000/register -H "Content-Type: application/json" -d '{"username": "j", "email": "invalid", "password": "short", "age": 15}'
 # # {"errors": ["username too short", "invalid email", "password too short", "age must be 18+"]}
 # ```
 
